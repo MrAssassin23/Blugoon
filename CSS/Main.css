@@ -30,6 +30,7 @@ aside {
   height: 100vh;
   position: fixed;
   display: inline-block;
+  transition: transform 0.5s ease-in-out;
   overflow-x: hidden !important;
   overflow-y: auto !important;
 }
@@ -46,6 +47,7 @@ div.right {
   display: inline-block;
   left: 28%;
   position: relative;
+  transition: left 0.5s ease-in-out;
 }
 img.profile-logo {
   width: 170px;
@@ -78,13 +80,13 @@ nav a {
   font-weight: bold;
   border-bottom: 1px solid white;
 }
-header {
+/* header {
   line-height: 70px;
   text-align: center;
   width: 100%;
   background-color: var(--sidebar-bg);
   display: none;
-}
+} */
 nav a:hover {
   background-color: white;
   color: var(--sidebar-bg);
@@ -222,7 +224,7 @@ label {
   font-weight: bolder;
   font-size: 16px;
 }
-input[type="radio"] {
+input[type="radio"],input#navbar {
   display: none;
 }
 input:checked + label {
@@ -299,6 +301,21 @@ footer {
   overflow: auto;
   display: none;
 }
+label#nav-bar {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  background-color: white;
+  color: var(--sidebar-bg);
+  padding: 20px 30px;
+  font-size: 32px;
+  margin: 0;
+  z-index: 2;
+}
+input:checked + aside {
+  transform: translateX(0%);
+}
 @media screen and (min-width: 1200px) {
   aside {
     width: 21%;
@@ -311,14 +328,19 @@ footer {
 }
 @media screen and (max-width: 800px) {
   aside {
-    display: none;
+    transform: translateX(-100%);
+    width: 90%;
+    z-index: 1;
   }
   div.right {
     width: 88%;
     left: 6%;
     margin-top: 30px;
   }
-  header {
+  label#nav-bar {
+    display: block;
+  }
+  /* header {
     display: block;
   }
   nav a {
@@ -344,7 +366,7 @@ footer {
   }
   div.social {
     margin: 30px 0;
-  }
+  } */
 }
 @media screen and (max-width: 640px) {
   div.subsec {
