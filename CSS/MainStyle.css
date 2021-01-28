@@ -1,4 +1,4 @@
- * {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -63,12 +63,15 @@ aside img.profile-logo {
 aside h1.title {
   font-size: 32px;
   font-weight: 900;
+  color: white;
   text-transform: uppercase;
   margin: 0px 0px 4px 0px;
 }
 
 aside h3.subtitle {
   font-size: 12px;
+  font-weight: 600;
+  color: white;
   text-transform: uppercase;
   margin: 4px 0px 0px 0px;
 }
@@ -109,6 +112,8 @@ aside div.social i#social {
   height: 35px;
   width: 35px;
   font-size: 16px;
+  font-weight: 600;
+  color: white;
   text-align: center;
   padding-top: 8px;
 }
@@ -129,6 +134,7 @@ aside footer#sidebar {
 aside footer#sidebar h5 {
   font-size: 13px;
   font-weight: 400;
+  color: white;
 }
 
 div.right {
@@ -144,12 +150,14 @@ div.right h2.title, div.right h4.subtitle {
   margin-bottom: 15px;
   font-size: 32px;
   font-weight: 900;
+  color: white;
   line-height: 1.2;
 }
 
 div.right h4.subtitle {
   font-size: 28px;
   font-weight: 700;
+  color: white;
 }
 
 section {
@@ -210,14 +218,16 @@ hr.separator {
 p {
   line-height: 2rem;
   font-size: 16px;
+  font-weight: normal;
+  color: white;
   letter-spacing: 0.5px;
 }
 
 button {
   border: 0px;
-  color: #2279be;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
+  color: #2279be;
   padding: 15px 25px;
   text-transform: uppercase;
   border-radius: 4px;
@@ -255,6 +265,8 @@ div.features-grid div.feature:hover {
 
 div.features-grid div.feature i#feature {
   font-size: 72px;
+  font-weight: normal;
+  color: white;
   margin: 20px 0;
 }
 
@@ -267,9 +279,9 @@ form.catergory {
 form.catergory label {
   padding: 5px;
   margin: 0px 10px;
-  color: white;
-  font-weight: bolder;
   font-size: 16px;
+  font-weight: bolder;
+  color: white;
 }
 
 input[type="radio"],
@@ -289,9 +301,7 @@ div.gallery-grid {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 30px 15px;
-      grid-template-areas: "img-1 img-2 img-3"
- "img-1 img-5 img-3"
- "img-4 img-5 img-6";
+      grid-template-areas: "img-1 img-2 img-3" "img-1 img-5 img-3" "img-4 img-5 img-6";
 }
 
 div.gallery-grid img {
@@ -363,34 +373,39 @@ form.contact textarea {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 15px;
   border: 1px solid white;
-  color: white;
   font-size: 18px;
+  font-weight: normal;
+  color: white;
   letter-spacing: 0.5px;
   outline: none;
 }
 
 form.contact input ::-webkit-input-placeholder,
 form.contact textarea ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 form.contact input :-ms-input-placeholder,
 form.contact textarea :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 form.contact input ::-ms-input-placeholder,
 form.contact textarea ::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 form.contact input ::placeholder,
 form.contact textarea ::placeholder {
-  color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 form.contact button {
@@ -407,9 +422,10 @@ label#nav-bar {
   left: 0;
   top: 0;
   background-color: white;
+  font-size: 32px;
+  font-weight: normal;
   color: #2279be;
   padding: 20px 30px;
-  font-size: 32px;
   margin: 0;
   z-index: 2;
 }
