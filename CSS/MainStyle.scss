@@ -3,7 +3,7 @@ $sidebar-bg: #2279be;
 $icon-bg: #1d6097;
 $blur-bg: rgba(255, 255, 255, 0.1);
 
-@mixin fontstyle($size, $weight: normal, $color: white) {
+@mixin fontstyle($size:16px, $weight: normal, $color: white) {
   font-size: $size;
   font-weight: $weight;
   color: $color;
@@ -11,6 +11,10 @@ $blur-bg: rgba(255, 255, 255, 0.1);
 
 * {
   box-sizing: border-box;
+  
+}
+html{
+  scroll-behavior: smooth;
 }
 body {
   margin: 0px;
@@ -190,16 +194,20 @@ div.features-grid {
   width: 100%;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  div.feature {
+  div.feature { 
     padding: 50px;
     background-color: $blur-bg;
     &:hover {
       background-color: white;
-      color: black;
+      color: black
     }
     i#feature {
       @include fontstyle(72px )  ;
+      color: inherit;
       margin: 20px 0;
+    }
+    h4,p{
+      color: inherit;
     }
   }
 }
